@@ -1,0 +1,3 @@
+[submodule "method/difflib_docx"]
+	path = method/difflib_docx
+	url = https://github.com/Nopom/difflib_docx
