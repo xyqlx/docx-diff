@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "Revision2Highlight": {
-      "commandName": "Project",
-      "commandLineArgs": "\"C:\\project\\docx-diff\\test\\diff_result.docx\""
-    }
-  }
-}
