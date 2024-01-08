@@ -1,3 +1,6 @@
 [submodule "method/difflib_docx"]
 	path = method/difflib_docx
 	url = https://github.com/Nopom/difflib_docx
+[submodule "method/Revision2Highlight"]
+	path = method/Revision2Highlight
+	url = https://github.com/xyqlx/Revision2Highlight
