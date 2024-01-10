@@ -23,7 +23,7 @@ This project is used to compare the differences between two docx files
 
 ## 探索过程
 
-在实验之前，提供一个简单的样例，`test/raw.docx`和`test/raw_mod1.docx`，其中包含了一些设计哈基米的不堪入目的内容，后者在前者的基础上修改了一些文字内容
+在实验之前，提供一个简单的样例，`test/raw.docx`和`test/raw_mod1.docx`，其中包含了一些涉及哈基米的不堪入目的内容，后者在前者的基础上修改了一些文字内容
 
 ### 首先看看Microsoft Word的比较文档功能吧
 
@@ -33,7 +33,7 @@ This project is used to compare the differences between two docx files
 
 ### 再看看搜到的difflib_docx的效果吧
 
-简单看了下代码，按照说明把两个docx文件放在compareRobot文件夹下运行compareWithContract即可
+简单看了下代码，按照说明把两个docx文件放在compareRobot文件夹下运行compareWithContract.py即可
 
 然而结果并不是很理想，Word无法打开生成的文件，提示“Word在试图打开文件时出现错误，请尝试下列方法……”
 
@@ -110,7 +110,7 @@ VS，启动！
 
 因为要处理不同的revision类型，[官网文档](https://learn.microsoft.com/en-us/dotnet/api/microsoft.office.interop.word.wdrevisiontype?view=word-pia)可以查看到共有21种
 
-这里我们只处理wdRevisionDelete，wdRevisionInsert，wdRevisionMovedFrom和wdRevisionMovedTo
+这里我们暂时先试试只处理wdRevisionDelete，wdRevisionInsert，wdRevisionMovedFrom和wdRevisionMovedTo
 
 怎么说呢，调试过程还挺长，以下是xyq遇到的雷点：
 
@@ -213,4 +213,4 @@ namespace Revision2Highlight
 }
 ```
 
-没错，可以注意到其实标记的方式并不是highlight……实际上代码可以调整的空间很大，在使用的时候肯定大概率要根据具体的文定制……不过，能自动化就已经是胜利了
+没错，可以注意到其实标记的方式并不是highlight……实际上代码可以调整的空间很大，在使用的时候肯定大概率要根据具体的文档定制……不过，能自动化就已经是胜利了
